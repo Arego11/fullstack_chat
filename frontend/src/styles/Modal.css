@@ -1,0 +1,101 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 50px;
+}
+
+.modal-content {
+  background: #161616; /* Change this to your desired background color */
+  padding: 20px; /* Increased padding */
+  border-radius: 8px;
+  width: 300px;
+  height: 500px; /* Increased height */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  position: relative; /* For positioning the close button */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-start; /* Align form content to the top */
+}
+
+.modal-content label {
+  margin-bottom: 5px; 
+  width: 100%;
+  text-align: left;
+}
+
+.modal-content input {
+  padding: 15px;
+  margin-top: 20px;  
+  margin-bottom: 0px;  
+  border: 1px solid #6f6f6f;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent; /* Make the input background transparent */
+  color: #E0E0E0; /* Set the text color */
+}
+
+.modal-content .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-content button {
+  padding: 10px;
+  background-color: #3b3ec0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 25px; 
+}
+.modal-content button:hover {
+  background-color: #391a87;
+}
+
+.modal-content .signIn {
+  position: absolute;
+  padding: 10px;
+  color: #3b3ec0;
+  cursor: pointer;
+  margin-top: 25px; 
+  font-size: 17px;
+  bottom: 20px;
+  right: 20px;
+  width: auto;  
+}
+.modal-content .signIn:hover {
+  color: #391a87;
+}
+.modal-content .question {
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px; 
+  left: 20px;   
+  margin-top: 0; 
+}
